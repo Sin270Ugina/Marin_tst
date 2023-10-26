@@ -307,6 +307,12 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -325,29 +331,63 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Monserrat";
-  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf");
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("woff2"), url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Monserrat";
-  src: url("../fonts/Montserrat/static/Montserrat-Light.ttf") url("../fonts/Montserrat/static/Montserrat-LightItalic.ttf");
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf") format("woff2"), url("../fonts/Montserrat/static/Montserrat-MediumItalic.ttf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/static/Oswald-Bold.ttf") format("woff2"), url("../fonts/Oswald/static/Oswald-SemiBold.ttf") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fConts/Montserrat/static/Montserrat-Black.ttf") format("woff2"), url("../fonts/Montserrat/static/Montserrat-BlackItalic.ttf") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("woff2"), url("../fonts/Montserrat/static/Montserrat-RegularItalic.ttf") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald/static/Oswald-Bold.ttf") url("../fonts/Oswald/static/Oswald-SemiBold.ttf");
+  src: url("../fonts/Oswald/static/Oswald-Bold.ttf") format("woff2"), url("../fonts/Oswald/static/Oswald-SemiBold.ttf") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 .nav__list {
   list-style: none;
-  display: inline-block;
-  padding: 20px;
+  display: inline-flex;
+  gap: 15px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #85AAAB;
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav__link_active {
+  color: #60E1E3;
+  border-bottom: 2px solid currentColor;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #63cdcf;
 }
 
 .btn {
@@ -377,6 +417,13 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.4;
 }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 30px 0 30px 0;
+}
+
 .offer {
   background-image: url(../images/photo_to_main_offer.jpg);
   background-repeat: no-repeat;
@@ -398,10 +445,25 @@ h1, h2, h3, h4, h5, h6 {
 .about {
   background-image: url(images/Rectangle.png);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  /*background-color: rgba(0, 0, 0, .7);*/
   background-blend-mode: overlay;
   color: #fff;
   padding: 60px 0 60px 0;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 75px 400px 50px 75px;
+  grid-auto-flow: column;
+}
+
+.form__line {
+  width: 200px;
+  color: #fff;
+}
+
+.form__line_text {
+  height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
