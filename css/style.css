@@ -494,17 +494,42 @@ h1, h2, h3, h4, h5, h6 {
 
 .form {
   display: grid;
-  grid-template-columns: auto 3fr auto;
-  grid-template-rows: 100px 3fr 35px 45px;
-  grid-auto-flow: column;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 100px 1fr 1fr 1fr 30px 45px;
+  grid-row-gap: 5px;
+  grid-column-gap: 3px;
+  /*   &__checkbox{
+      grid-row: 5/6;
+      grid-column: 1/6;
+      color: #2D5E5E;
+      font-size: 14px;
+  }*/
 }
 .form__title {
   font-weight: 700;
+  text-align: center;
+  grid-column: 1/span 2;
+  grid-row: 1/span 1;
 }
-.form__line, .form__line_text {
-  grid-column: 1/6;
-  line-height: 1.5;
-  max-width: 370px;
+.form__line {
+  font-size: 18px;
+  line-height: 1.33;
+  grid-column: 1/span 1;
+}
+.form__line_text {
+  grid-column: 2/3;
+  grid-row: 1/span 3;
+  width: 224px;
+}
+.form__line_tel {
+  grid-row: 3/span 1;
+  grid-column: 1/span 1;
+}
+.form__line_select {
+  grid-row: 4/5;
+  padding: 4px 11px 4px 0;
+  width: 223px;
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
