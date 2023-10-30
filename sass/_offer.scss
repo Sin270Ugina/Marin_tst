@@ -3,16 +3,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #fff;
+    padding-bottom: 300px;
     &__title{
-        padding-top: 250px;
-        line-height: 1.5em;
+        padding-top: 230px;
+        line-height: 1.5;
         font-size: 50px;
-        max-width: 555px;
-
+        max-width: 575px;
+        padding-bottom: 31px;
     }
     &__description{
         font-size: 50px;
-        max-width: 555px;
+        max-width: 575px;
+        padding-bottom: 31px;
     }
 }

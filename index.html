@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" >
     <title>Marin__tst</title>
 </head>
 <body>
-    <header class="center__header">
+    <header class="center header">
         <a href="#" class="logo">
             <img src="images/logo.svg" alt="logo">
         </a>
@@ -23,41 +22,68 @@
         </nav>
     </header>
     <main>
-    <section class="center__offer">
-        <h1 class="offer__title"> Ваш личный психолог В Кривом Роге</h1>
-        <p class="offer__description"> Личные, семейные и групповые консультации</p>
-        <a class="button" href="#"> УЗНАТЬ БОЛЬШЕ</a>
-    </section>
-    <section class="center__services">
-        <article class="services__item">
-            <img class="servieces__icon" src="images/goal.svg" alt="goal">
-            <h2 class="cervices__title">Личные консультации</h2>
-            <p class="servises__description">Достижения поставленных целей бывают сложной задачей, но 
-                при поддержке нет ничего не возможного</p>
+        <section class="center offer">
+            <h1 class="offer__title"> Ваш личный психолог В Кривом Роге</h1>
+            <p class="offer__description"> Личные, семейные и групповые консультации</p>
+            <a class="btn" href="#"> УЗНАТЬ БОЛЬШЕ</a>
+        </section>
+        <section class="center services">
+            <article class="services__item">
+                <img class="services__icon" src="images/goal.svg" alt="goal">
+                <h2 class="services__title">Личные консультации</h2>
+                <p class="services__description">
+                    Достижения поставленных целей бывают сложной задачей, но
+                    при поддержке нет ничего не возможного
+                </p>
+            </article>
+            <article class="services__item">
+                    <img class="services__icon" src="images/family-room.svg" alt="family">
+                    <h2 class="services__title">Семейная терапия</h2>
+                    <p class="services__description">
+                        У любой семьи бывают кризисные
+                        ситуации, поэтому в такие моменты важно поддерживать друг друга
+                    </p>
+            </article>
+            <article class="services__item">
+                        <img class="services__icon" src="images/network.svg" alt="network">
+                        <h2 class="services__title">Сенситивные группы</h2>
+                        <p class="services__description">
+                            Групповые занятия — отличное место, чтобы научиться общаться с
+                            окружающими людьми и раскрыть свой потенциал
+                        </p>
 
-            <img class="servieces__icon" src="images/family-room.svg" alt="family">
-            <h2 class="cervices__title">Семейная терапия</h2>
-            <p class="servises__description">У любой семьи бывают кризисные 
-                ситуации, поэтому в такие моменты важно поддерживать друг друга</p>
+             </article>
+        </section>
+        <section class="center about">
+            <h2 class="about__title">Немного обо мне</h2>
+            <p class="about__description">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового
+                океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
+            </p>
+            <button class="btn btn_bordered"> Задать вопрос </button>
+            <a class="btn" href="#"> Хочу консультацию</a>
+            <img class="about__img" src="images/about_photo.png">
+        </section>
+        <section class="center_form">  
+            <h2 class="form__title">Записаться на прием</h2>
+            <!--<form action="https://fom.in.ua/echo" method="post"></form> -->
+                <input class="form__line" type="text" placeholder="Ваше имя *">         
+                <input class="form__line_tel" type="tel" placeholder="Ваш телефон *">
+                <select class="form__line_select" name="Тема встречи *" placeholder="Тема встречи *">
+                    <option value="#"> Тема встречи *</option>
+                    <option value="#"> Тема встречи *</option>
+                    <option value="#"> Тема встречи *</option>
+                </select>
+            
+              
+            <textarea class="form__line_text" type="text" placeholder="Пожелания *"> </textarea>
+            <form class="form__checkbox" action="https://fom.in.ua/echo" method="post">    
+             <input type="checkbox"> Я согласен с политикой конфиденциальности </form>   
+            <input class="btn" type="submit" name="Send" value="Отправить">
+        </section>
 
-            <img class="servieces__icon" src="images/network.svg" alt="network">
-            <h2 class="cervices__title">Сенситивные группы</h2>
-            <p class="servises__description">Групповые занятия — отличное место, чтобы научиться общаться с 
-                окружающими людьми и раскрыть свой потенциал</p>
-
-        </article>
-    </section>
-</section>
-<section class="center__about">
-    <h2 class="about__title">Немного обо мне</h2>
-    <p class="about__description">Далеко-далеко за словесными горами в стране гласных и согласных живут 
-        рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового 
-        океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. 
-        Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.</p>
-    <button class="btn btn_bordered"> Задать вопрос </button>
-    <a class="btn" href="#"> Хочу консультацию</a>
-    <img class="about__img" src="images/about_photo.png" alt="">
-</section>
-</main>
+    </main>
 </body>
 </html>
