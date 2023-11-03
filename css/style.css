@@ -565,4 +565,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 40px;
 }
 
+.reviews {
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+.reviews__icon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
