@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   position: absolute;
   padding: 30px 0 30px 0;
@@ -497,6 +497,8 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 30% 30%;
   grid-template-rows: 100px repeat(3, 50px) 35px 45px;
   grid-gap: 5px;
+  padding-bottom: 30px;
+  justify-content: center;
 }
 .form__title {
   grid-row: 1/1;
@@ -529,7 +531,11 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: 1/3;
   text-align: center;
   color: #2D5E5E;
+  padding: 15px 10px;
   appearance: none;
+}
+.form__btn {
+  padding-left: 30px;
 }
 
 .counter {
@@ -582,15 +588,17 @@ h1, h2, h3, h4, h5, h6 {
 .news {
   background-image: url(../images/counter-bg-news.png);
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0 20px 0;
+  background-blend-mode: overlay;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 250px 250px 250px;
   color: #fff;
 }
 .news__title {
   font-family: Oswald;
   font-size: 44px;
   line-height: 1.5;
+  grid-row: 1/span 2;
 }
 .news__img {
   width: 334px;
@@ -609,6 +617,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quest__link_gr {
   color: #2D5E5E;
+}
+
+.map {
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
