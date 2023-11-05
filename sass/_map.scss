@@ -1,4 +1,25 @@
 .map{
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__title{
+        color: #2D5E5E;
+        font-family: Oswald;
+        font-size: 48px;
+        padding: 10px 0;
+        line-height: 1.5px;
+    }
+    &__list{
+        list-style: none;
+        background-color: #ADDDDE;
+        
+       }
+    &__link{
+        text-decoration: none;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 1.33;
+    }
 }

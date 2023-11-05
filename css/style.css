@@ -499,6 +499,9 @@ h1, h2, h3, h4, h5, h6 {
   grid-gap: 5px;
   padding-bottom: 30px;
   justify-content: center;
+  /* &__btn{
+       padding-left: 30px;
+   }*/
 }
 .form__title {
   grid-row: 1/1;
@@ -533,9 +536,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D5E5E;
   padding: 15px 10px;
   appearance: none;
-}
-.form__btn {
-  padding-left: 30px;
 }
 
 .counter {
@@ -598,7 +598,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Oswald;
   font-size: 44px;
   line-height: 1.5;
-  grid-row: 1/span 2;
+  grid-column: 1/span 2;
 }
 .news__img {
   width: 334px;
@@ -622,6 +622,26 @@ h1, h2, h3, h4, h5, h6 {
 .map {
   background-image: url(../images/map.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.map__title {
+  color: #2D5E5E;
+  font-family: Oswald;
+  font-size: 48px;
+  padding: 10px 50px 5px 3px;
+  line-height: 1.5px;
+}
+.map__list {
+  list-style: none;
+  background-color: #ADDDDE;
+}
+.map__link {
+  text-decoration: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.33;
 }
 
 /*# sourceMappingURL=style.css.map */
