@@ -579,4 +579,36 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0 20px 0;
 }
 
+.news {
+  background-image: url(../images/counter-bg-news.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px 0;
+  color: #fff;
+}
+.news__title {
+  font-family: Oswald;
+  font-size: 44px;
+  line-height: 1.5;
+}
+.news__img {
+  width: 334px;
+  height: 230px;
+}
+
+.quest__list {
+  list-style: none;
+}
+.quest__link {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #000;
+}
+.quest__link_gr {
+  color: #2D5E5E;
+}
+
 /*# sourceMappingURL=style.css.map */

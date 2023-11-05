@@ -4,5 +4,16 @@
     display: flex;
     justify-content: space-around;
     padding: 20px 0 20px 0;
+    color: #fff;
+    &__title{
+        font-family: Oswald;
+        font-size: 44px;
+        line-height: 1.5;
+
+    }
+    &__img{
+        width: 334px;
+        height: 230px;
+   }
 
 }
