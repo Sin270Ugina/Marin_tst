@@ -1,7 +1,8 @@
 .map{
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    width: 1440px;
+    height: 600px;
     background-position: center;
     &__title{
         color: #2D5E5E;
