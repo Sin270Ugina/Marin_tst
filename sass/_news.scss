@@ -5,8 +5,8 @@
     color: #fff;
     display: grid;
     grid-template-columns: repeat(3,200px);
-    grid-template-rows: 140px 330px 330px;
-    justify-content: space-evenly;
+    grid-template-rows: 140px 300px 150px;
+    justify-content: space-around;
     align-items: center;
     //gap: 30px;
     &__title{
