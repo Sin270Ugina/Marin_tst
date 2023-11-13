@@ -1,18 +1,21 @@
 .map{
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     &__title{
         color: #2D5E5E;
         font-family: Oswald;
-        font-size: 48px;
-        padding: 10px 0;
+        font-size: 44px;
+        padding: 0;
         line-height: 1.5px;
     }
     &__list{
         list-style: none;
         background-color: #ADDDDE;
+        width: 300px;
+        height: 200px;
+        padding: 5px;
         
        }
     &__link{
