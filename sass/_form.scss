@@ -41,6 +41,15 @@
         padding: 15px 10px;
         appearance: none;
     }
+    &__link{
+        text-decoration: none;
+        color: #2D5E5E;
+        font-size: 18px;
+    }
+    &__img{
+        padding-right: 15px;
+        padding-top: 3px;
+      }
    /* &__btn{
         padding-left: 30px;
     }*/

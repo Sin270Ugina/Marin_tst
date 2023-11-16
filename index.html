@@ -77,9 +77,12 @@
                     <option value="#"> Тема встречи *</option>
                 </select>
             <textarea class="form__line_text" type="text" placeholder="Пожелания *"> </textarea>
-            <form class="form__checkbox" action="https://fom.in.ua/echo" method="post">    
-             <input type="checkbox"> Я согласен с политикой конфиденциальности </form>   
+            <article class="form__chackbox">
+                <a href="#" class="form__link">
+                    <img class="form__img" src="images/chackbox.svg" alt="chackbox">Я согласен с политикой конфиденциальности
+                </a>
             <input class="btn form__btn" type="submit" name="Send" value="Отправить">
+            </article>
         </section>
         <section class="center counter">
             <article class="counter__item">
@@ -164,25 +167,32 @@
                 <li class="map__item"><a class="map__link" href="#" alt="#">Адрес: Ул. Центральная д. 10, офис 1</a></li>
             </ul>
         </section>
-        <section class="center discount">  
-            <h2 class="discount__title">Записаться на прием</h2>
-                <input class="discount__line" type="text" placeholder="Ваше имя *">         
-                <input class="discount__line_tel" type="tel" placeholder="Ваш телефон *">
-                <input class="btn discount__btn" type="submit" name="Send" value="Отправить">
+        <section class="center discount">
+            <article>
+                <h2 class="discount__title">Записаться на прием</h2>
+                    <input class="discount__line" type="text" placeholder="Ваше имя *">         
+                    <input class="discount__line_tel" type="tel" placeholder="Ваш телефон *">
+                    <input class="btn discount__btn" type="submit" name="Send" value="Отправить">
+            </article>
+            <article class="discount__chackbox">
+                <a href="#" class="discount__link">
+                    <img class="discount__img" src="images/chackbox.svg" alt="chackbox">Я согласен с политикой конфиденциальности
+                </a>
+            </article>
         </section>
-        <footer class="center footer">
-            <a href="#" class="logo">
-                <img src="images/logo.svg" alt="logo">
-            </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#" alt="#"><img src="images/instagram-logo.svg" alt="instagram-logo">@phyholog_sergei</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#" alt="#"><img src="images/viber.svg" alt="viber">+380 99 123 45 67</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#" alt="#"><img src="images/telegram.svg" alt="telegram">@phyholog_sergei</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#" alt="#"><img src="images/phone-call.svg" alt="phone-call">+380 99 123 45 67</a></li>
-                </ul>
-            </nav>
-        </footer>
     </main>
+    <footer class="footer">
+        <a href="#" class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#" alt="#"><img class="footer__img" src="images/instagram-logo.svg" alt="instagram-logo">@phyholog_sergei</a></li>
+                <li class="footer__item"><a class="footer__link" href="#" alt="#"><img class="footer__img" src="images/viber.svg" alt="viber">+380 99 123 45 67</a></li>
+                <li class="footer__item"><a class="footer__link" href="#" alt="#"><img class="footer__img" src="images/telegram.svg" alt="telegram">@phyholog_sergei</a></li>
+                <li class="footer__item"><a class="footer__link" href="#" alt="#"><img class="footer__img" src="images/phone-call.svg" alt="phone-call">+380 99 123 45 67</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

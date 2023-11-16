@@ -1,4 +1,25 @@
 .footer{
-    background-color: #2D5E5E;
-    
+  background-color: #2D5E5E;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 50px 5px 50px 5px;
+    &__list{
+        list-style: none;
+        display: inline-flex;
+        gap: 15px;
+      }
+    &__link{
+          text-decoration: none;
+          color: #85AAAB;
+          font-size: 18px;
+      &_active{
+          color: #60E1E3;
+          border-bottom: 2px solid #60E1E3; 
+       }
+    }
+    &__img{
+      padding-right: 15px;
+      padding-top: 3px;
+    }
 }
