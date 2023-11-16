@@ -1,10 +1,9 @@
 .map{
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1440px;
-    grid-template-rows: 600px;
-    background-position: center;
+    width: 1440px;
+    height: 600px;
+    
     &__title{
         color: #2D5E5E;
         font-family: Oswald;
@@ -18,8 +17,6 @@
         width: 300px;
         height: 200px;
         padding: 5px;
-        justify-content: center;
-        align-items: end;
        }
     &__link{
         text-decoration: none;

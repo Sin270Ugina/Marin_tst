@@ -1,3 +1,6 @@
 .discount{
     font-size: 24px;
+    &__line, &__line_tel{
+        border-radius: 20px;
+    }
 }
