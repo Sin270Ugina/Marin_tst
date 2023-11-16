@@ -537,6 +537,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 10px;
   appearance: none;
 }
+.form__link {
+  text-decoration: none;
+  color: #2D5E5E;
+  font-size: 18px;
+}
+.form__img {
+  padding-right: 15px;
+  padding-top: 3px;
+}
 
 .counter {
   background-image: url(../images/counter_bg.png);
@@ -684,9 +693,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .discount {
   font-size: 24px;
+  padding-left: 10%;
+}
+.discount__title {
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.33;
 }
 .discount__line, .discount__line_tel {
   border-radius: 20px;
+}
+.discount__link {
+  text-decoration: none;
+  color: #2D5E5E;
+  font-size: 18px;
+}
+.discount__img {
+  padding-right: 15px;
+  padding-top: 3px;
+}
+.discount__chackbox {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .contacts {
@@ -695,6 +726,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background-color: #2D5E5E;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 50px 5px 50px 5px;
+}
+.footer__list {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #85AAAB;
+  font-size: 18px;
+}
+.footer__link_active {
+  color: #60E1E3;
+  border-bottom: 2px solid #60E1E3;
+}
+.footer__img {
+  padding-right: 15px;
+  padding-top: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
